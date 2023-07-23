@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel War</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="canvas" id="canvas"></div>
+
+        <div class="controls">
+            <div id="colorButtons">
+                <button style="background-color: #FF4500;" onclick="selectColor('#FF4500')"></button>
+                <button style="background-color: #FFA800;" onclick="selectColor('#FFA800')"></button>
+                <button style="background-color: #FFD635;" onclick="selectColor('#FFD635')"></button>
+                <button style="background-color: #00A368;" onclick="selectColor('#00A368')"></button>
+                <button style="background-color: #7EED56;" onclick="selectColor('#7EED56')"></button>
+                <button style="background-color: #2450A4;" onclick="selectColor('#2450A4')"></button>
+                <button style="background-color: #3690EA;" onclick="selectColor('#3690EA')"></button>
+                <button style="background-color: #51E9F4;" onclick="selectColor('#51E9F4')"></button>
+                <button style="background-color: #811E9F;" onclick="selectColor('#811E9F')"></button>
+                <button style="background-color: #B44AC0;" onclick="selectColor('#B44AC0')"></button>
+                <button style="background-color: #FF99AA;" onclick="selectColor('#FF99AA')"></button>
+                <button style="background-color: #9C6926;" onclick="selectColor('#9C6926')"></button>
+                <button style="background-color: #000000;" onclick="selectColor('#000000')"></button>
+                <button style="background-color: #898D90;" onclick="selectColor('#898D90')"></button>
+                <button style="background-color: #FFFFFF;" onclick="selectColor('#FFFFFF')"></button>
+            </div>
+
+            <!-- Affichage du minuteur -->
+            <div id="timer"></div>
+
+            <div id="selectedColor"></div>
+            <button id="placePixelButton" onclick="placeSelectedColorPixel()">Placer le Pixel</button>
+        </div>
+
+        <img id="selectionArea" src="zone.png" alt="Selection Area" style="position: absolute; display: none;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

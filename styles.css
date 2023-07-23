@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+.pixel {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#colorButtons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+}
+
+#colorButtons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#selectedColor {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+#selectionArea {
+    position: absolute;
+    display: none;
+    /* Ajoutez les propriétés width et height pour modifier la taille de l'image */
+    width: 10px;
+    height: 10px;
+    /* Assurez-vous de régler la valeur de background-size à "100% 100%" */
+    background-size: 100% 100%;
+    /* Supprime les anciens pointillés */
+    outline: none;
+    /* Décalage de 1 pixel vers la droite et vers le bas */
+    transform: translate(1px, 1px);
+}
+
+#placePixelButton {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
